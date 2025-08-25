@@ -1,14 +1,17 @@
 # Data-Warehouse-Project
 **Building a data warehouse using Microsoft SQL Server**
 
-Welcome!
+Welcome!  
 This project highlights industry best practices for Data Engineering through the creation of a data warehousing and analytics solution using Microsoft SQL Server.
 
+## Project plan
+https://www.notion.so/Data-Warehouse-Project-25938120e06b8092b893c39afe20f162?source=copy_link
+
 ## Specifications
-**Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-**Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-**Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-**Scope**: Focus on the latest dataset only; historization of data is not required.
+**Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.  
+**Data Quality**: Cleanse and resolve data quality issues prior to analysis.  
+**Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.  
+**Scope**: Focus on the latest dataset only; historization of data is not required.  
 **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 ## Repository Structure
