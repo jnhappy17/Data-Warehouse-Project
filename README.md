@@ -2,10 +2,14 @@
 **Building a data warehouse using Microsoft SQL Server**
 
 Welcome!  
-This project highlights industry best practices for Data Engineering through the creation of a data warehousing and analytics solution using Microsoft SQL Server.
+This project highlights industry best practices for Data Engineering through the creation of a data warehousing solution using Microsoft SQL Server.
 
-## Project plan
-https://www.notion.so/Data-Warehouse-Project-25938120e06b8092b893c39afe20f162?source=copy_link
+## Project overview
+This project involves:
+
+**Data Architecture**: Designing a Modern Data Warehouse Using the Medallion Architecture with Bronze, Silver and Gold layers.  
+**ETL Pipelines**: Extracting, Transforming, and Loading data from source systems into the warehouse.  
+**Data Modeling**: Developing fact and dimension tables optimized for analytical queries.  
 
 ## Specifications
 **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.  
