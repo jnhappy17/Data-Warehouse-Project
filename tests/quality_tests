@@ -1,6 +1,5 @@
-/* test the quality of the data in the bronze layer tables,  then in the silver layer tables after 1st transformation,  then in the gold layer
-tables after final transformation. 
-=> SELECT FROM bronze.crm_cust_info - then SELECT FROM silver.crm_cust_info - then SELECT FROM gold.crm_cust_info
+/* test the quality of the data in the bronze layer tables,  then in the silver layer tables after 1st transformation.
+=> SELECT FROM bronze.crm_cust_info - then SELECT FROM silver.crm_cust_info
 */
 
 -- Check for NULLs or Duplicates in Primary key crm_cust_info
@@ -58,11 +57,12 @@ WHERE sls_sales != sls_quantity * sls_price
 OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL
 OR sls_sales <= 0 OR sls_quantity <= 0 OR sls_price <= 0 
 
--- Check for out of date bday erp_cust_az12
+-- Check for out of date birth date erp_cust_az12
 SELECT DISTINCT bdate
 FROM silver.erp_cust_az12
 WHERE bdate < '1924-01-01' OR bdate > GETDATE()
 
+-- Data Standardization & Consistency
 SELECT DISTINCT gen
 FROM silver.erp_cust_az12
 
