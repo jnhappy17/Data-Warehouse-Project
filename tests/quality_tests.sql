@@ -1,5 +1,15 @@
-/* test the quality of the data in the bronze layer tables,  then in the silver layer tables after 1st transformation.
-=> SELECT FROM bronze.crm_cust_info - then SELECT FROM silver.crm_cust_info
+/* 
+ This script performs various quality checks for data consistency, accuracy, 
+    and standardization across the 'bronze' and 'silver' layers. It includes checks for:
+    - Null or duplicate primary keys.
+    - Unwanted spaces in string fields.
+    - Data standardization and consistency.
+    - Invalid date ranges and orders.
+    - Data consistency between related fields.
+
+=> test the quality of the data in the bronze layer tables,  then in the silver layer tables after 1st transformation.
+Example:
+SELECT FROM bronze.crm_cust_info - then SELECT FROM silver.crm_cust_info
 */
 
 -- Check for NULLs or Duplicates in Primary key crm_cust_info
